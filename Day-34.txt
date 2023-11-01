@@ -1,0 +1,17 @@
+Day-34
+
+1)Design DB model for Guvi Zen class
+
+
+Queries used to design a database:
+
+create database zen_class;
+use zen_class;
+create table students(stu_no int(10) primary key,stu_name varchar(20), course_id int(10),date_of_join date, mobile bigint(15), 
+                      address varchar(20),email varchar(20), placement_id int(10), eli_cond int(10) );
+create table courses(course_id int(10) primary key, course_name varchar(20), duration varchar(20), fees int(10));
+create table placement(placement_id int(10) primary key, salary int(10), company_name varchar(20), designation varchar(20));
+create table eligibility_criteria( eli_cond int(10) primary key, webkata_count int(10), codekata_count int(10));
+
+
+
